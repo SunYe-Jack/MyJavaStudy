@@ -31,6 +31,30 @@ public class MyProgramSwitchTest {
 		default : System.out.println("不能识别的指令");
 		
 		}
+		
+		char b ='a';
+		
+		switch (b) {
+		
+		case 'a' : System.out.println("扫地"); break;
+		
+		case 'b' : System.out.println("开灯"); break;
+		
+		default : System.out.println("不能识别的指令");
+		
+		}
+		
+		String c = "a";
+		
+		switch (c) {
+
+		case "a" : System.out.println("扫地"); break;
+		
+		case "b" : System.out.println("开灯"); break;
+		
+		default : System.out.println("不能识别的指令");
+		
+		}
 	}
 
 }
