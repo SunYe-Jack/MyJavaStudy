@@ -186,6 +186,7 @@ public class MyStringTest {
 		String str1 = "  aa  bb f   ";
 		
 		System.out.println(str1.trim());
+		
 	}
 	
 	@Test
