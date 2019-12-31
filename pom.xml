@@ -14,8 +14,28 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+	<profiles>
+	<profile>
+	    <id>downloadSources</id>
+	    <properties>
+	        <downloadSources>true</downloadSources>
+	        <downloadJavadocs>true</downloadJavadocs>          
+	    </properties>
+	</profile>
+	</profiles>
 
     <dependencies>
+        <!-- <dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib-nodep</artifactId>
+			<version>3.3.0</version>
+		</dependency> -->
+		
+		<dependency>
+			 <groupId>org.springframework</groupId>
+			 <artifactId>spring-core</artifactId>
+			 <version>5.2.2.RELEASE</version>
+		</dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
@@ -29,4 +49,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    
 </project>
